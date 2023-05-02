@@ -2,6 +2,7 @@
 Given  a  square  matrix,  calculate  the  absolute  difference  between  the  sums  of  its diagonals.
 
 ## This is The Pseudo Code of The Recursive Algorithm
+
 CONST MAX ← 100
 
 PROCEDURE DiagonalDifferenceRecursive(arr: ARRAY[MAX][MAX], n: INTEGER, RightDiagonal: INTEGER, LeftDiagonal: INTEGER, Row: INTEGER, Column: INTEGER)
