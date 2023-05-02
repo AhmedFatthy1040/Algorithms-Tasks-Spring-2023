@@ -1,0 +1,3 @@
+D:/Programming Projects/Algorithms-Tasks-Spring-2023/cmake-build-debug/CMakeFiles/Algorithms_Tasks_Spring_2023.dir
+D:/Programming Projects/Algorithms-Tasks-Spring-2023/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Programming Projects/Algorithms-Tasks-Spring-2023/cmake-build-debug/CMakeFiles/rebuild_cache.dir
