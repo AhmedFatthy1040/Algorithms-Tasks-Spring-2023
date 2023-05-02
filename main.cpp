@@ -2,10 +2,10 @@
 #include <cmath>
 using namespace std;
 
-const int MAX = 1e5;
+const int MAX = 100;
 
-int diagonalDifferenceNonRecursive(int arr[][MAX], int n);
-void diagonalDifferenceRecursive(int arr[][MAX], int n, int& RightDiagonal, int& LeftDiagonal, int row, int col);
+int DiagonalDifferenceNonRecursive(int arr[][MAX], int n);
+void DiagonalDifferenceRecursive(int arr[][MAX], int n, int& RightDiagonal, int& LeftDiagonal, int Row, int Column);
 
 int main() {
     int n, RightDiagonal = 0, LeftDiagonal = 0;
@@ -16,16 +16,16 @@ int main() {
             cin >> arr[i][j];
 
     /* Solution in Recursive Algorithm */
-     diagonalDifferenceRecursive(arr, n, RightDiagonal, LeftDiagonal, 0, 0);
+     DiagonalDifferenceRecursive(arr, n, RightDiagonal, LeftDiagonal, 0, 0);
      cout << abs(RightDiagonal - LeftDiagonal);
 
     /* Solution in Non-Recursive Algorithm */
-    // cout << diagonalDifferenceNonRecursive(arr, n);
+    // cout << DiagonalDifferenceNonRecursive(arr, n);
 
     return 0;
 }
 
-int diagonalDifferenceNonRecursive(int arr[][MAX], int n) {
+int DiagonalDifferenceNonRecursive(int arr[][MAX], int n) {
     int RightDiagonal = 0, LeftDiagonal = 0;
     for (int i = 0; i < n; i++) {
         RightDiagonal += arr[i][i];
@@ -34,11 +34,11 @@ int diagonalDifferenceNonRecursive(int arr[][MAX], int n) {
     return abs(RightDiagonal - LeftDiagonal);
 }
 
-void diagonalDifferenceRecursive(int arr[][MAX], int n, int& RightDiagonal, int& LeftDiagonal, int row, int col) {
-    if (row == n) {
+void DiagonalDifferenceRecursive(int arr[][MAX], int n, int& RightDiagonal, int& LeftDiagonal, int Row, int Column) {
+    if (Row == n) {
         return;
     }
-    RightDiagonal += arr[row][col];
-    LeftDiagonal += arr[row][n - col - 1];
-    diagonalDifferenceRecursive(arr, n, RightDiagonal, LeftDiagonal, row + 1, col + 1);
+    RightDiagonal += arr[Row][Column];
+    LeftDiagonal += arr[Row][n - Column - 1];
+    DiagonalDifferenceRecursive(arr, n, RightDiagonal, LeftDiagonal, Row + 1, Column + 1);
 }
