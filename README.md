@@ -1,7 +1,7 @@
 # Algorithms-Tasks-Spring-2023
 Given  a  square  matrix,  calculate  the  absolute  difference  between  the  sums  of  its diagonals.
 
-## This is The Pseudo Code of The Recursive Algorithm
+## The Pseudo Code of The Recursive Algorithm
 
 const MAX ← 100
 
@@ -31,8 +31,8 @@ procedure main
     read n
     declare arr: array[MAX][MAX]
     
-    for i from 0 to n - 1 DO
-        for j from 0 to n - 1 DO
+    for i from 0 to n - 1 do
+        for j from 0 to n - 1 do
             read arr[i][j]
         end for
     end for
@@ -42,4 +42,27 @@ procedure main
     DiagonalDifferenceRecursive(arr, n, RightDiagonal, LeftDiagonal, 0, 0)
     print abs(RightDiagonal - LeftDiagonal)
     
+end procedure
+
+## The Pseudo Code of The Non-Recursive Algorithm
+
+const MAX ← 100
+
+procedure main
+
+    declare n, RightDiagonal, LeftDiagonal: integer
+    read n
+    declare arr: array[MAX][MAX]
+    for i from 0 to n - 1 do
+        for j from 0 to n - 1 do
+            read arr[i][j]
+        end for
+    end for
+
+    for i from 0 to n - 1 do
+        RightDiagonal ← RightDiagonal + arr[i][i]
+        LeftDiagonal ← LeftDiagonal + arr[i][n - i - 1]
+    end for
+
+    print abs(RightDiagonal - LeftDiagonal)
 end procedure
