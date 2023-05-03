@@ -23,7 +23,7 @@ Return the absolute difference between the sums of the matrix's two diagonals as
  
  4 5 6
  
- 10 8 -12S
+ 10 8 -12
 ### Sample Output : 15
 
 
@@ -70,6 +70,10 @@ procedure main
     
 end procedure
 
+### Analysis (Time Complexity is O(n) as it's Show Below)
+![Recursive](https://user-images.githubusercontent.com/91102592/235984957-5568e9a6-0297-4409-8574-53ca24b612a5.jpg)
+
+
 #### Output
 ![Recursive](https://user-images.githubusercontent.com/91102592/235751392-190caf80-6cff-4ab2-aaef-319facd40bc8.png)
 
@@ -95,6 +99,10 @@ procedure main
 
     print abs(RightDiagonal - LeftDiagonal)
 end procedure
+
+### Analysis (Time Complexity is O(n*2) as it's Show Below)
+![Non-Recursive](https://user-images.githubusercontent.com/91102592/235987434-8a3aa06f-5ebc-4f2b-b192-c5f0455e590a.jpg)
+
 
 #### Output
 ![Non-Recursive](https://user-images.githubusercontent.com/91102592/235751355-b313823a-8a09-4280-9d9b-fd2edc958fa4.png)
