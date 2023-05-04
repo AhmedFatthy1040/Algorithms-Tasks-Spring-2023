@@ -3,9 +3,13 @@
 #### Description : Given  a  square  matrix,  calculate  the  absolute  difference  between  the  sums  of  its diagonals.
 
 For example, the square matrix  is shown below:
+
 1 2 3
+
 4 5 6
+
 9 8 9  
+
 The left-to-right diagonal = 1+5+9  =15.
 The  right  to left diagonal =3+5+9  =  17.
 Their absolute difference is|15-17| = 2.
@@ -106,3 +110,8 @@ end procedure
 
 #### Output
 ![Non-Recursive](https://user-images.githubusercontent.com/91102592/235751355-b313823a-8a09-4280-9d9b-fd2edc958fa4.png)
+
+### Video in Arabic to Explain The Algorithms
+https://user-images.githubusercontent.com/91102592/236212179-bac2e882-7559-434a-85cc-9b1e2242d5e8.mp4
+
+
