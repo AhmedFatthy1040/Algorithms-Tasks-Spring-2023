@@ -36,6 +36,7 @@ Return the absolute difference between the sums of the matrix's two diagonals as
 
 ## The Pseudo Code of The Recursive Algorithm
 
+```
 const MAX ← 100
 
 procedure
@@ -76,6 +77,7 @@ procedure main
     print abs(RightDiagonal - LeftDiagonal)
     
 end procedure
+```
 
 ### Analysis (Time Complexity is O(n) as it's Shown Below)
 ![Recursive](https://user-images.githubusercontent.com/91102592/235984957-5568e9a6-0297-4409-8574-53ca24b612a5.jpg)
@@ -86,6 +88,7 @@ end procedure
 
 ## The Pseudo Code of The Non-Recursive Algorithm
 
+```
 const MAX ← 100
 
 procedure main
@@ -106,6 +109,7 @@ procedure main
 
     print abs(RightDiagonal - LeftDiagonal)
 end procedure
+```
 
 ### Analysis (Time Complexity is O(n*2) as it's Shown Below)
 ![Non-Recursive](https://user-images.githubusercontent.com/91102592/235987434-8a3aa06f-5ebc-4f2b-b192-c5f0455e590a.jpg)
